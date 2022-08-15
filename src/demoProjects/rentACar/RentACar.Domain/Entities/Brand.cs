@@ -1,8 +1,9 @@
-﻿using Core.Persistence.Repositories;
+﻿
+using Core.Persistence.Repositories;
 
-namespace Domain.Entities
+namespace RentACar.Domain.Entities
 {
-    public class Brand : Entity
+    public class Brand :Entity
     {
         public string Name { get; set; }
 
