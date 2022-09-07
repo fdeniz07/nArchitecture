@@ -13,7 +13,7 @@ builder.Services.AddPersistenceServices(builder.Configuration);
 //builder.Services.AddInfrastructureServices();
 //builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -27,7 +27,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-if (app.Environment.IsProduction())
+//if (app.Environment.IsProduction())
     app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();

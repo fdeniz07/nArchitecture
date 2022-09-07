@@ -17,6 +17,7 @@ namespace RentACar.Persistence
             //                                             configuration.GetConnectionString("RentACarCampConnectionString")));
             services.AddDbContext<BaseDbContext>(options =>options.UseNpgsql(configuration.GetConnectionString("RentACarCampConnectionString")));
             services.AddScoped<IBrandRepository, BrandRepository>();
+            services.AddScoped<IModelRepository, ModelRepository>();
 
             return services;
         }
